@@ -1,4 +1,4 @@
-package Modelo;
+package ProyectAlojamientos.Modelo;
 
 public abstract class Hospederia extends MedioDeAlojamiento{
     private int capacidad;

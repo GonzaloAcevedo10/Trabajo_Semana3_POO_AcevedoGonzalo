@@ -1,4 +1,4 @@
-package Modelo;
+package ProyectAlojamientos.Modelo;
 
 public class Carpa extends MedioDeAlojamiento{
     private int cantPersonas;

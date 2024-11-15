@@ -1,10 +1,10 @@
-package Controlador;
+package ProyectAlojamientos.Controlador;
 
-import Modelo.Cabagna;
-import Modelo.Carpa;
-import Modelo.DatosClientes;
-import Modelo.Hotel;
-import Modelo.MedioDeAlojamiento;
+import ProyectAlojamientos.Modelo.Cabagna;
+import ProyectAlojamientos.Modelo.Carpa;
+import ProyectAlojamientos.Modelo.DatosClientes;
+import ProyectAlojamientos.Modelo.Hotel;
+import ProyectAlojamientos.Modelo.MedioDeAlojamiento;
 
 import java.util.ArrayList;
 import java.util.Scanner;

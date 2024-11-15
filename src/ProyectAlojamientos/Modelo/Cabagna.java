@@ -1,4 +1,4 @@
-package Modelo;
+package ProyectAlojamientos.Modelo;
 
 public class Cabagna extends Hospederia{
     private boolean chimenea;

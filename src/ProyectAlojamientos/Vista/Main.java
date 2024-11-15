@@ -1,6 +1,6 @@
-package Vista;
+package ProyectAlojamientos.Vista;
 
-import Controlador.Alojamientos;
+import ProyectAlojamientos.Controlador.Alojamientos;
 import java.util.ArrayList;
 import java.util.Scanner;
 

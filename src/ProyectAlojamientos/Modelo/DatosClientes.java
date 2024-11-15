@@ -1,4 +1,4 @@
-package Modelo;
+package ProyectAlojamientos.Modelo;
 
 public class DatosClientes {
     private String nombre;

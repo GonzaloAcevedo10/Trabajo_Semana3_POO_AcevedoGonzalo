@@ -1,4 +1,4 @@
-package Modelo;
+package ProyectAlojamientos.Modelo;
 
 import static java.lang.Math.*;
 

@@ -1,4 +1,4 @@
-package Modelo;
+package ProyectAlojamientos.Modelo;
 
 public class Hotel extends Hospederia{
     private boolean conDesayuno;
