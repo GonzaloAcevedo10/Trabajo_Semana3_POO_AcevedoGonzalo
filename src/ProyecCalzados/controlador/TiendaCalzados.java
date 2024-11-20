@@ -10,6 +10,7 @@ import java.util.ArrayList;
 
 public class TiendaCalzados {
 
+    //Controladores
     ArrayList<Calzado> calzados = new ArrayList<>();
 
     public void ingresarCalzado(){
