@@ -1,44 +1,43 @@
 package ProyecCalzados.vista;
 
 
-import ProyecCalzados.element.Deportivo;
-import ProyecCalzados.element.Hombre;
-import ProyecCalzados.element.Mujer;
-import ProyecCalzados.element.Producto;
+import ProyecCalzados.controlador.TiendaCalzados;
+
 
 public class Main {
     public static void main(String[] args) {
-        Producto producto = new Producto("5454ABC",10,10000);
-        Deportivo deportivo = new Deportivo(producto,"Fin de semana", 44, "Basquet", "Cuero");
-        Producto producto1 = new Producto("626262CBA",2,10000);
-        Hombre hombre = new Hombre(producto1,"Semana",39.5F,"verde");
-        Producto producto2 = new Producto("8081JDF",0,8000);
-        Mujer mujer = new Mujer(producto2,"Fin de semana", 37.5F,"verde",11);
+        TiendaCalzados tiendaCalzados = new TiendaCalzados();
+        int opcion = 0;
+        do{
+            System.out.println("\t\tSistema\n1) Ingresar\n2) Mostrar solo calzado de mujer\n3) Valor venta\n"
+                    +"4) Calzados top\n5) Total impuesto especifico\n6) Total descuento\n7) Salir");
+            opcion = Leer.datoInt();
+            switch (opcion){
+                case 1:
+                    tiendaCalzados.ingresarCalzado();
+                    break;
+                case 2:
+                    tiendaCalzados.mostrarCalzadoMujer();
+                    break;
+                case 3:
+                    tiendaCalzados.valorVenta();
+                    break;
+                case 4:
+                    tiendaCalzados.calzadosTop();
+                    break;
+                case 5:
+                    tiendaCalzados.impuestoEspecificoTotal();
+                    break;
+                case 6:
+                    tiendaCalzados.descuentoTotal();
+                    break;
+                case 7:
+                    System.out.println("Saliendo . . .");
+                    break;
+                default:
+                    System.out.println("Error. Ingrese una opcion correcta.");
+            }
 
-
-
-        System.out.println("Su stock inicial es "+ deportivo.getProducto().getStock());
-        System.out.println("El valor venta es: " + deportivo.valorVenta());
-        System.out.println("El valor impuesto material es: " + deportivo.impuestoMaterial());
-        System.out.println("El valor IVA es: " + deportivo.impuestoIva());
-        System.out.println("El valor total del producto deportivo es "+ deportivo.valorAPagar());
-        System.out.println("Su stock es "+ deportivo.getProducto().getStock());
-        System.out.println("-----------------------------------------------------------");
-        System.out.println("Su stock inicial es "+ hombre.getProducto().getStock());
-        System.out.println("El valor venta es: " + hombre.valorVenta());
-        System.out.println("El valor impuesto material es: " + hombre.impuestoEspecifico());
-        System.out.println("El valor IVA es: " + hombre.impuestoIva());
-        System.out.println("El descuento de producto hombre es " + hombre.descuento());
-        System.out.println("El valor total del producto hombre es "+ hombre.valorAPagar());
-        System.out.println("Su stock final es "+ hombre.getProducto().getStock());
-        System.out.println("-----------------------------------------------------------");
-        System.out.println("Su stock inicial es "+ mujer.getProducto().getStock());
-        System.out.println("El valor venta es: " + mujer.valorVenta());
-        System.out.println("El valor impuesto material es: " + mujer.impuestoEspecifico());
-        System.out.println("El valor IVA es: " + mujer.impuestoIva());
-        System.out.println("El descuento de producto mujer es " + mujer.descuento());
-        System.out.println("El valor total del producto mujer es "+ mujer.valorAPagar());
-        System.out.println("Su stock final es "+ mujer.getProducto().getStock());
-
+        }while(opcion != 7);
     }
 }

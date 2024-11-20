@@ -1,6 +1,5 @@
 package ProyecCalzados.element;
 
-import vista.Main;
 
 public abstract class Calzado {
     protected Producto producto;
@@ -20,7 +19,10 @@ public abstract class Calzado {
         else {if(this.diaDeVenta.equalsIgnoreCase("Semana")){
             return (float) Math.round(this.producto.getValorBase() - (this.producto.getValorBase()*15/100));
         }
-        else return -1;
+        else {
+            System.out.println("El calzado no fue cargado correctamente. Error.");
+            return -1;
+        }
         }
     }
 

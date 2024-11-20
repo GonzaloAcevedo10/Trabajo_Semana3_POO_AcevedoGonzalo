@@ -1,4 +1,4 @@
-package ProyectAlojamientos.Vista;
+package vista;
 
 import java.io.BufferedReader;
 import java.io.IOException;
